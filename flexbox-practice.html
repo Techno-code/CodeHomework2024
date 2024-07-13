@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Template</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: row wrap;
+            justify-content: space-around;
+        }
+        @media all and (max-width: 800px) {
+  .container {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+.blocks {
+    background-color: lightsalmon;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    width: 250px;
+    height: 225px;
+    align-self: center;
+    margin: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blocks">
+            <h3>Basic</h3>
+            <p>$9.99/month</p>
+            <ul>
+                <li>✅ 10GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+    
+        <div class="blocks">
+            <h3>Standard</h3>
+            <p>$19.99/month</p>
+            <ul>
+                <li>✅ 50GB Storage</li>
+                <li>✅ 5 Users</li>
+                <li>Phone & Email Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+    
+        <div class="blocks">
+            <h3>Premium</h3>
+            <p>$49.99/month</p>
+            <ul>
+                <li>✅ 100GB Storage</li>
+                <li>✅ 10 Users</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+    </div>
+    
+</body>
+</html>
